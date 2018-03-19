@@ -73,7 +73,7 @@ var Unity = function (_Component) {
     key: "_onProgress",
     value: function _onProgress(unityInstance, progression) {
       if (typeof this.props.onProgress !== "undefined") {
-        this.props.onProgress(progression);
+        this.props.onProgress(unityInstance, progression);
       }
     }
   }, {
